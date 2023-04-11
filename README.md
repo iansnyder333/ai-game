@@ -7,10 +7,18 @@ Project to build a game and deploy an Intelligent Agent using PyTorch.
 - [Notes](#Notes) 
 
 ## How to Download 
-download 
+```sh
+git clone https://github.com/iansnyder333/ai-game.git
+cd ai-game
+python3 -m venv venv
+source venv/bin/activate
+pip3 install -r requirements.txt
+```
 
 ## How to Run 
-run 
+```sh
+python3 main.py
+```
 
 ## Notes 
-notes
+Please report any issues,suggestions. Thank you for supporting.
