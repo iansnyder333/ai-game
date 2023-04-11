@@ -1,9 +1,3 @@
-from src.AI import agent_driver
-from src.Client import game_driver 
-
-game_driver.GameDriver().run()
-
-
-
-
-
+if __name__=='__main__':
+    from src.Client import game_driver
+    game_driver.GameDriver().run()

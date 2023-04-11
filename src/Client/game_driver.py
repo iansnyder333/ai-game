@@ -1,5 +1,4 @@
 import pygame
-import random
 from enum import Enum
 from collections import namedtuple
 import pygame_menu
@@ -73,9 +72,8 @@ class GameDriver:
             pygame.quit()
             sys.exit()
 
-        def play_game():
-            self.main_game()
-            return pygame_menu.events.RESET
+        
+            
         def play_easy():
             self.main_game(d=10)
             menu._open(end)
@@ -123,7 +121,7 @@ class GameDriver:
         end.add.button('Quit',exit_game )
 
         trainer=pygame_menu.Menu('AI Trainer', 640, 480, theme=my_theme)
-        trainer.add.button('Train AI (10 games): PRESS CNTRL-C TERMINATE!', play_train)
+        trainer.add.button('Train AI (10 games): (cntrl-c to end)', play_train)
         trainer.add.button('Return to Main Menu', pygame_menu.events.RESET)
         # Display menu
         while True:
