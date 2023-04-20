@@ -10,6 +10,8 @@ from src.Client.snake_game import SnakeGameClient,Direction,Point
 from src.AI.agent_driver import AgentDriver 
 from src.AI.train import Train
 
+
+#Constants 
 BLACK = (0, 0, 0)
 WHITE = (255, 255, 255)
 RED = (200, 0, 0)
@@ -71,34 +73,40 @@ class GameDriver:
         def exit_game(*args, **kwargs):
             pygame.quit()
             sys.exit()
-
-        
-            
+ 
         def play_easy():
             self.main_game(d=10)
             menu._open(end)
-            #return pygame_menu.events.RESET
+            
         def play_medium():
             self.main_game(d=15)
             menu._open(end)
+
         def play_hard():
             self.main_game(d=20)
             menu._open(end)
+
         def play_extreme():
             self.main_game(d=40)
             menu._open(end)
+
         def play_game_AI():
             self.main_game_AI()
             menu._open(end)
+
         def play_train():
             self.train_game()
             menu._open(end)
+
         def level_menu():
             menu._open(level)
+
         def select_menu():
             menu._open(player)
+
         def train_menu():
             menu._open(trainer)
+
         menu.add.button('Press Enter to Play', select_menu)
         menu.add.button('Press Enter to Train AI', train_menu)
         menu.add.button('Press Enter to Quit', exit_game)
@@ -123,6 +131,7 @@ class GameDriver:
         trainer=pygame_menu.Menu('AI Trainer', 640, 480, theme=my_theme)
         trainer.add.button('Train AI (10 games): (cntrl-c to end)', play_train)
         trainer.add.button('Return to Main Menu', pygame_menu.events.RESET)
+
         # Display menu
         while True:
             events = pygame.event.get()
