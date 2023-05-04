@@ -1,5 +1,6 @@
 # ai-game: Snake 
-Project to build a game and deploy an Intelligent Agent using PyTorch. 
+Project to build a game and deploy an Intelligent Agent using Deep Q-Learning with PyTorch. 
+
 <img width="637" alt="Screen Shot 2023-04-25 at 1 31 45 PM" src="https://user-images.githubusercontent.com/58576523/234356873-50c87baf-2ce8-4b82-a105-712aa83f3496.png">
 
 Compete against Artificial Intelligence or train your own AI bot!
