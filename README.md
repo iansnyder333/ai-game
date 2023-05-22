@@ -32,3 +32,10 @@ python3.7 main.py
 
 ## Notes 
 Python 3.7 required, any Python version >=3.7 and <3.11 will work.
+
+### How the Model is Trained
+<img width="956" alt="Training" src="https://github.com/iansnyder333/ai-game/assets/58576523/3f676029-4785-4aef-b50d-9cb43825198c">
+
+### Deep Q-Learning Model Architecture 
+<img width="860" alt="Model" src="https://github.com/iansnyder333/ai-game/assets/58576523/5ee8a6dd-8396-4c23-95a7-7f3e31b3d7e5">
+
