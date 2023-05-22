@@ -1,7 +1,7 @@
 import torch
 import os
 import numpy as np
-from src.AI.game import SnakeGame, Direction, Point
+from src.AI.game import SnakeGame
 from src.AI.display import plot
 from src.AI.control_agent import ControlAgent 
 

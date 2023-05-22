@@ -1,11 +1,11 @@
 import torch
 import os
-import numpy as np
-from src.AI.game import SnakeGame, Direction, Point
+from src.AI.game import SnakeGame
 from src.AI.control_agent import ControlAgent 
 import sys
 class AgentDriver:
     def __init__(self):
+        #Load Previous Model(state, checkpoint, optimizer, games played, record)
         if os.path.exists('src/AI/model/model.pth'):
             self.agent = ControlAgent()
             checkpoint = torch.load('src/AI/model/model.pth')
@@ -19,6 +19,7 @@ class AgentDriver:
             sys.exit()
         
     def run(self):
+        #Initiliaze agent and enviroment
         agent = self.agent 
         game = SnakeGame()
         while True:
@@ -38,3 +39,4 @@ class AgentDriver:
             if done:
                 print(f'Score: {score}')
                 return
+            
